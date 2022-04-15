@@ -1,0 +1,118 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             myData, DATA
+    2 00000000         ; Name this block of code ARMex
+    3 00000000         
+    4 00000000 0000000A 
+                       COUNT   EQU              10          ; test count
+    5 00000000 00000000 
+                       SUM     EQU              0
+    6 00000000         
+    7 00000000                 AREA             myCode, CODE
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           __main
+   10 00000000         
+   11 00000000         __main
+   12 00000000 200A            LDR              r0, =COUNT
+   13 00000002 2100            LDR              r1, =SUM
+   14 00000004 2201            LDR              r2, =1
+   15 00000006         
+   16 00000006         myloop
+   17 00000006 1851            ADD              r1, r2, r1
+   18 00000008 1C52            ADD              r2, r2, #1
+   19 0000000A 1A84            SUBS             r4, r0, r2
+   20 0000000C D1FE            BNE              myloop
+   21 0000000E 1851            ADD              r1, r2, r1
+   22 00000010         
+   23 00000010 E7FE    stop    B                stop
+   24 00000012         
+   25 00000012                 END
+Command Line: --16 --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --
+apcs=interwork --depend=.\objects\main.d -o.\objects\main.o -I.\RTE\_Target_1 -
+IC:\Users\Alex_Ch\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include -I
+C:\Users\Alex_Ch\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS
+\Device\ST\STM32F3xx\Include --predefine="__EVAL SETA 1" --predefine="__UVISION
+_VERSION SETA 536" --predefine="_RTE_ SETA 1" --predefine="STM32F303xC SETA 1" 
+--predefine="_RTE_ SETA 1" --list=.\listings\main.lst main.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+myData 00000000
+
+Symbol: myData
+   Definitions
+      At line 1 in file main.s
+   Uses
+      None
+Comment: myData unused
+1 symbol
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 11 in file main.s
+   Uses
+      At line 9 in file main.s
+Comment: __main used once
+myCode 00000000
+
+Symbol: myCode
+   Definitions
+      At line 7 in file main.s
+   Uses
+      None
+Comment: myCode unused
+myloop 00000006
+
+Symbol: myloop
+   Definitions
+      At line 16 in file main.s
+   Uses
+      At line 20 in file main.s
+Comment: myloop used once
+stop 00000010
+
+Symbol: stop
+   Definitions
+      At line 23 in file main.s
+   Uses
+      At line 23 in file main.s
+Comment: stop used once
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+COUNT 0000000A
+
+Symbol: COUNT
+   Definitions
+      At line 4 in file main.s
+   Uses
+      At line 12 in file main.s
+Comment: COUNT used once
+SUM 00000000
+
+Symbol: SUM
+   Definitions
+      At line 5 in file main.s
+   Uses
+      At line 13 in file main.s
+Comment: SUM used once
+2 symbols
+342 symbols in table
