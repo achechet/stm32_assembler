@@ -1,5 +1,5 @@
 Dependencies for Project 'Lesson002', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (.\user\main.s)(0x62613164)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I .\inc-IC:\Users\Alex_Ch\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include--pd "__UVISION_VERSION SETA 536" --pd "STM32F303xC SETA 1"--list .\listings\main.lst --xref -o .\objects\main.o --depend .\objects\main.d)
-I (.\inc\stm32f303rctx.asm)(0x5E8DEF42)
-F (.\inc\stm32f303rctx.asm)(0x5E8DEF42)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I .\inc-IC:\Users\Alex_Ch\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include--pd "__UVISION_VERSION SETA 536" --pd "STM32F303xC SETA 1"--list .\listings\stm32f303rctx.lst --xref -o .\objects\stm32f303rctx.o --depend .\objects\stm32f303rctx.d)
+F (.\user\main.s)(0x62616BD4)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I .\inc-IC:\Users\Alex_Ch\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include--pd "__UVISION_VERSION SETA 536" --pd "STM32F303xC SETA 1"--list .\listings\main.lst --xref -o .\objects\main.o --depend .\objects\main.d)
+I (.\inc\stm32f303rctx.asm)(0x62616B92)
+F (.\inc\stm32f303rctx.asm)(0x62616B92)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I .\inc-IC:\Users\Alex_Ch\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM32F3xx\Include--pd "__UVISION_VERSION SETA 536" --pd "STM32F303xC SETA 1"--list .\listings\stm32f303rctx.lst --xref -o .\objects\stm32f303rctx.o --depend .\objects\stm32f303rctx.d)

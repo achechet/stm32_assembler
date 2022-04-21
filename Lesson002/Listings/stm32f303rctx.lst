@@ -11,27 +11,46 @@ ARM Macro Assembler    Page 1
                        PERIPH_BASE
                                EQU              0x40000000
     3 00000000         
-    4 00000000 40021018 
-                       RCC_APB2ENR
-                               EQU              0x40021018
-    5 00000000 40011004 
+    4 00000000 40021014 
+                       RCC_AHBENR
+                               EQU              0x40021014
+    5 00000000 00000015 
+                       RCC_AHBENR_IOPEEN
+                               EQU              21
+    6 00000000         
+    7 00000000 48001000 
+                       GPIOE_REG
+                               EQU              0x48001000
+    8 00000000         
+    9 00000000 48001014 
+                       GPIOE_ODR
+                               EQU              0x48001014
+   10 00000000         
+   11 00000000 0000001F 
+                       GPIOE_MODER_15_H
+                               EQU              31
+   12 00000000 0000001E 
+                       GPIOE_MODER_15_L
+                               EQU              30
+   13 00000000         
+   14 00000000 40011004 
                        GPIOC_CRH
                                EQU              0x40011004
-    6 00000000 4001100C 
+   15 00000000 4001100C 
                        GPIOC_ODR
                                EQU              0x4001100C
-    7 00000000         
-    8 00000000 00000004 
+   16 00000000         
+   17 00000000 00000004 
                        RCC_APB2ENR_IOPCEN_N
                                EQU              4
-    9 00000000 00000014 
+   18 00000000 00000014 
                        GPIO_CRH_MODE13_0_N
                                EQU              20
-   10 00000000 0000000D 
+   19 00000000 0000000D 
                        GPIO_ODR_ODR13_N
                                EQU              13
-   11 00000000         
-   12 00000000                 END
+   20 00000000         
+   21 00000000                 END
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
 interwork --depend=.\objects\stm32f303rctx.d -o.\objects\stm32f303rctx.o -I.\in
 c -IC:\Users\Alex_Ch\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\C
@@ -48,7 +67,7 @@ GPIOC_CRH 40011004
 
 Symbol: GPIOC_CRH
    Definitions
-      At line 5 in file inc\stm32f303rctx.asm
+      At line 14 in file inc\stm32f303rctx.asm
    Uses
       None
 Comment: GPIOC_CRH unused
@@ -56,23 +75,61 @@ GPIOC_ODR 4001100C
 
 Symbol: GPIOC_ODR
    Definitions
-      At line 6 in file inc\stm32f303rctx.asm
+      At line 15 in file inc\stm32f303rctx.asm
    Uses
       None
 Comment: GPIOC_ODR unused
+GPIOE_MODER_15_H 0000001F
+
+Symbol: GPIOE_MODER_15_H
+   Definitions
+      At line 11 in file inc\stm32f303rctx.asm
+   Uses
+      None
+Comment: GPIOE_MODER_15_H unused
+GPIOE_MODER_15_L 0000001E
+
+Symbol: GPIOE_MODER_15_L
+   Definitions
+      At line 12 in file inc\stm32f303rctx.asm
+   Uses
+      None
+Comment: GPIOE_MODER_15_L unused
+GPIOE_ODR 48001014
+
+Symbol: GPIOE_ODR
+   Definitions
+      At line 9 in file inc\stm32f303rctx.asm
+   Uses
+      None
+Comment: GPIOE_ODR unused
+GPIOE_REG 48001000
+
+Symbol: GPIOE_REG
+   Definitions
+      At line 7 in file inc\stm32f303rctx.asm
+   Uses
+      None
+Comment: GPIOE_REG unused
 GPIO_CRH_MODE13_0_N 00000014
 
 Symbol: GPIO_CRH_MODE13_0_N
    Definitions
-      At line 9 in file inc\stm32f303rctx.asm
+      At line 18 in file inc\stm32f303rctx.asm
    Uses
       None
 Comment: GPIO_CRH_MODE13_0_N unused
 GPIO_ODR_ODR13_N 0000000D
 
 Symbol: GPIO_ODR_ODR13_N
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Absolute symbols
+
    Definitions
-      At line 10 in file inc\stm32f303rctx.asm
+      At line 19 in file inc\stm32f303rctx.asm
    Uses
       None
 Comment: GPIO_ODR_ODR13_N unused
@@ -92,27 +149,29 @@ Symbol: PERIPH_BB_BASE
    Uses
       None
 Comment: PERIPH_BB_BASE unused
-RCC_APB2ENR 40021018
+RCC_AHBENR 40021014
 
-Symbol: RCC_APB2ENR
+Symbol: RCC_AHBENR
    Definitions
       At line 4 in file inc\stm32f303rctx.asm
    Uses
       None
-Comment: RCC_APB2ENR unused
+Comment: RCC_AHBENR unused
+RCC_AHBENR_IOPEEN 00000015
+
+Symbol: RCC_AHBENR_IOPEEN
+   Definitions
+      At line 5 in file inc\stm32f303rctx.asm
+   Uses
+      None
+Comment: RCC_AHBENR_IOPEEN unused
 RCC_APB2ENR_IOPCEN_N 00000004
 
 Symbol: RCC_APB2ENR_IOPCEN_N
-
-
-
-ARM Macro Assembler    Page 2 Alphabetic symbol ordering
-Absolute symbols
-
    Definitions
-      At line 8 in file inc\stm32f303rctx.asm
+      At line 17 in file inc\stm32f303rctx.asm
    Uses
       None
 Comment: RCC_APB2ENR_IOPCEN_N unused
-8 symbols
-341 symbols in table
+13 symbols
+346 symbols in table
