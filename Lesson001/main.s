@@ -1,11 +1,18 @@
         AREA     myData, DATA
                                 ; Name this block of code ARMex
 
+	
 COUNT	EQU	10					; test count
 SUM		EQU 0
 
 		AREA	myCode, CODE
+
+	
 			ENTRY
+			
+
+GET led.inc
+	
 			EXPORT	__main
 
 __main

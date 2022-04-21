@@ -1,0 +1,118 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000 42000000 
+                       PERIPH_BB_BASE
+                               EQU              0x42000000
+    2 00000000 40000000 
+                       PERIPH_BASE
+                               EQU              0x40000000
+    3 00000000         
+    4 00000000 40021018 
+                       RCC_APB2ENR
+                               EQU              0x40021018
+    5 00000000 40011004 
+                       GPIOC_CRH
+                               EQU              0x40011004
+    6 00000000 4001100C 
+                       GPIOC_ODR
+                               EQU              0x4001100C
+    7 00000000         
+    8 00000000 00000004 
+                       RCC_APB2ENR_IOPCEN_N
+                               EQU              4
+    9 00000000 00000014 
+                       GPIO_CRH_MODE13_0_N
+                               EQU              20
+   10 00000000 0000000D 
+                       GPIO_ODR_ODR13_N
+                               EQU              13
+   11 00000000         
+   12 00000000                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
+interwork --depend=.\objects\stm32f303rctx.d -o.\objects\stm32f303rctx.o -I.\in
+c -IC:\Users\Alex_Ch\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\C
+MSIS\Device\ST\STM32F3xx\Include --predefine="__EVAL SETA 1" --predefine="__UVI
+SION_VERSION SETA 536" --predefine="STM32F303xC SETA 1" --list=.\listings\stm32
+f303rctx.lst inc\stm32f303rctx.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+GPIOC_CRH 40011004
+
+Symbol: GPIOC_CRH
+   Definitions
+      At line 5 in file inc\stm32f303rctx.asm
+   Uses
+      None
+Comment: GPIOC_CRH unused
+GPIOC_ODR 4001100C
+
+Symbol: GPIOC_ODR
+   Definitions
+      At line 6 in file inc\stm32f303rctx.asm
+   Uses
+      None
+Comment: GPIOC_ODR unused
+GPIO_CRH_MODE13_0_N 00000014
+
+Symbol: GPIO_CRH_MODE13_0_N
+   Definitions
+      At line 9 in file inc\stm32f303rctx.asm
+   Uses
+      None
+Comment: GPIO_CRH_MODE13_0_N unused
+GPIO_ODR_ODR13_N 0000000D
+
+Symbol: GPIO_ODR_ODR13_N
+   Definitions
+      At line 10 in file inc\stm32f303rctx.asm
+   Uses
+      None
+Comment: GPIO_ODR_ODR13_N unused
+PERIPH_BASE 40000000
+
+Symbol: PERIPH_BASE
+   Definitions
+      At line 2 in file inc\stm32f303rctx.asm
+   Uses
+      None
+Comment: PERIPH_BASE unused
+PERIPH_BB_BASE 42000000
+
+Symbol: PERIPH_BB_BASE
+   Definitions
+      At line 1 in file inc\stm32f303rctx.asm
+   Uses
+      None
+Comment: PERIPH_BB_BASE unused
+RCC_APB2ENR 40021018
+
+Symbol: RCC_APB2ENR
+   Definitions
+      At line 4 in file inc\stm32f303rctx.asm
+   Uses
+      None
+Comment: RCC_APB2ENR unused
+RCC_APB2ENR_IOPCEN_N 00000004
+
+Symbol: RCC_APB2ENR_IOPCEN_N
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Absolute symbols
+
+   Definitions
+      At line 8 in file inc\stm32f303rctx.asm
+   Uses
+      None
+Comment: RCC_APB2ENR_IOPCEN_N unused
+8 symbols
+341 symbols in table

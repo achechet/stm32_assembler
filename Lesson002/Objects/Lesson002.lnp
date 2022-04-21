@@ -1,0 +1,7 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\main.o"
+".\objects\stm32f303rctx.o"
+--diag_suppress 6314 --strict --scatter ".\Objects\Lesson002.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Lesson002.map" -o .\Objects\Lesson002.axf
