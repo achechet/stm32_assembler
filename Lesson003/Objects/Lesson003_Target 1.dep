@@ -1,0 +1,5 @@
+Dependencies for Project 'Lesson003', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\user\main.s)(0x6262A29B)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I .\inc-IC:\Users\Alex_Ch\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 536" --pd "STM32F446xx SETA 1"--list .\listings\main.lst --xref -o .\objects\main.o --depend .\objects\main.d)
+I (.\inc\stm32f446re.asm)(0x62616B92)
+F (.\inc\stm32f446re.asm)(0x62616B92)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I .\inc-IC:\Users\Alex_Ch\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 536" --pd "STM32F446xx SETA 1"--list .\listings\stm32f446re.lst --xref -o .\objects\stm32f446re.o --depend .\objects\stm32f446re.d)
