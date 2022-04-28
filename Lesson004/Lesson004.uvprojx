@@ -49,7 +49,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>Lesson002</OutputName>
+          <OutputName>Lesson004</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -82,7 +82,7 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>fromelf --bin --output .\Objects\Lesson002.bin .\Objects\Lesson002.axf</UserProg1Name>
+            <UserProg1Name>fromelf --bin --output .\Objects\Lesson004.bin .\Objects\Lesson004.axf</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -391,12 +391,12 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>New Group</GroupName>
+          <GroupName>inc</GroupName>
           <Files>
             <File>
-              <FileName>stm32f303rctx.asm</FileName>
+              <FileName>stm32f103c8.asm</FileName>
               <FileType>2</FileType>
-              <FilePath>.\inc\stm32f303rctx.asm</FilePath>
+              <FilePath>.\inc\stm32f103c8.asm</FilePath>
             </File>
           </Files>
         </Group>

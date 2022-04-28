@@ -51,12 +51,12 @@ ARM Macro Assembler    Page 1
                                EQU              13
    20 00000000         
    21 00000000                 END
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
-interwork --depend=.\objects\stm32f303rctx.d -o.\objects\stm32f303rctx.o -I.\in
-c -IC:\Users\Alex_Ch\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\C
-MSIS\Device\ST\STM32F3xx\Include --predefine="__EVAL SETA 1" --predefine="__UVI
-SION_VERSION SETA 536" --predefine="STM32F303xC SETA 1" --list=.\listings\stm32
-f303rctx.lst inc\stm32f303rctx.asm
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\objects\stm32f303rctx.d -o.\objects\stm32f303rctx.o -I.\inc -IC:
+\Users\Alex_Ch\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include 
+--predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 536" --predefin
+e="STM32F10X_MD SETA 1" --list=.\listings\stm32f303rctx.lst inc\stm32f303rctx.a
+sm
 
 
 

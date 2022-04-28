@@ -105,11 +105,11 @@ ENR - PERIPH_BASE) * 32 + RCC_AHBENR_IOPEEN * 4)
               424202D4 
               48001000 
               48001014 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
-interwork --depend=.\objects\main.d -o.\objects\main.o -I.\inc -IC:\Users\Alex_
-Ch\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\Drivers\CMSIS\Device\ST\STM
-32F3xx\Include --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 
-536" --predefine="STM32F303xC SETA 1" --list=.\listings\main.lst user\main.s
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\objects\main.d -o.\objects\main.o -I.\inc -IC:\Users\Alex_Ch\App
+Data\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include --predefine="__EVA
+L SETA 1" --predefine="__UVISION_VERSION SETA 536" --predefine="STM32F10X_MD SE
+TA 1" --list=.\listings\main.lst user\main.s
 
 
 
@@ -295,4 +295,4 @@ Absolute symbols
       At line 9 in file user\main.s
 Comment: top_of_stack used once
 15 symbols
-355 symbols in table
+354 symbols in table
