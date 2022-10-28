@@ -1,0 +1,173 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 GET              INC/Hed98428.s
+    1 00000000 50000000 
+                       AHBSA   EQU              0x50000000
+    2 00000000 40000000 
+                       APBSA   EQU              0x40000000
+    3 00000000         
+    4 00000000 50007080 
+                       NVMCTRL EQU              AHBSA + 0x7080
+    5 00000000 50007000 
+                       EMMU    EQU              AHBSA + 0x7000
+    6 00000000         
+    7 00000000 40000800 
+                       TIMER   EQU              APBSA + 0x0800
+    8 00000000 E000E100 
+                       NVIC_ISER
+                               EQU              0xE000E100
+    9 00000000                 END
+    2 00000000 00000400 
+                       Stack_Size
+                               EQU              0x400
+    3 00000000 20000400 
+                       top_of_stack
+                               EQU              0x20000000 + Stack_Size
+    4 00000000         
+    5 00000000                 PRESERVE8
+    6 00000000                 THUMB
+    7 00000000         
+    8 00000000                 AREA             RESET, DATA, READONLY
+    9 00000000 20000400        DCD              top_of_stack
+   10 00000004 00000000        DCD              Start
+   11 00000008         
+   12 00000008                 AREA             |.text|, CODE, READONLY
+   13 00000000         
+   14 00000000                 ENTRY
+   15 00000000         
+   16 00000000         Start   PROC
+   17 00000000 2000            MOVS             R0, #0
+   18 00000002 2101            MOVS             R1, #1
+   19 00000004 1C49            ADDS             R1, R1, #1
+   20 00000006 4A01            LDR              R2, =TIMER
+   21 00000008 2203            MOVS             R2, #3
+   22 0000000A         
+   23 0000000A                 ENDP
+   24 0000000A         
+   25 0000000A 00 00           ALIGN
+   26 0000000C                 END
+              40000800 
+Command Line: --debug --xref --cpu=SC000 --bi --apcs=interwork --depend=.\main.
+d -o.\main.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include --predefine="__
+EVAL SETA 1" --list=.\main.lst main.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 8 in file main.s
+   Uses
+      None
+Comment: RESET unused
+1 symbol
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 12 in file main.s
+   Uses
+      None
+Comment: .text unused
+Start 00000000
+
+Symbol: Start
+   Definitions
+      At line 16 in file main.s
+   Uses
+      At line 10 in file main.s
+Comment: Start used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+AHBSA 50000000
+
+Symbol: AHBSA
+   Definitions
+      At line 1 in file INC\Hed98428.s
+   Uses
+      At line 4 in file INC\Hed98428.s
+      At line 5 in file INC\Hed98428.s
+
+APBSA 40000000
+
+Symbol: APBSA
+   Definitions
+      At line 2 in file INC\Hed98428.s
+   Uses
+      At line 7 in file INC\Hed98428.s
+Comment: APBSA used once
+EMMU 50007000
+
+Symbol: EMMU
+   Definitions
+      At line 5 in file INC\Hed98428.s
+   Uses
+      None
+Comment: EMMU unused
+NVIC_ISER E000E100
+
+Symbol: NVIC_ISER
+   Definitions
+      At line 8 in file INC\Hed98428.s
+   Uses
+      None
+Comment: NVIC_ISER unused
+NVMCTRL 50007080
+
+Symbol: NVMCTRL
+   Definitions
+      At line 4 in file INC\Hed98428.s
+   Uses
+      None
+Comment: NVMCTRL unused
+Stack_Size 00000400
+
+Symbol: Stack_Size
+   Definitions
+      At line 2 in file main.s
+   Uses
+      At line 3 in file main.s
+Comment: Stack_Size used once
+TIMER 40000800
+
+Symbol: TIMER
+   Definitions
+      At line 7 in file INC\Hed98428.s
+   Uses
+      At line 20 in file main.s
+Comment: TIMER used once
+top_of_stack 20000400
+
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Absolute symbols
+
+Symbol: top_of_stack
+   Definitions
+      At line 3 in file main.s
+   Uses
+      At line 9 in file main.s
+Comment: top_of_stack used once
+8 symbols
+344 symbols in table

@@ -1,0 +1,7 @@
+--cpu SC000
+".\main.o"
+".\hed98428.o"
+--diag_suppress 6314 --strict --scatter ".\lesson006.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\lesson006.map" -o .\lesson006.axf
