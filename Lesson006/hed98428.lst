@@ -4,22 +4,24 @@
 ARM Macro Assembler    Page 1 
 
 
-    1 00000000 50000000 
+    1 00000000 E000EF90 
+                       SFCR    EQU              0xE000EF90
+    2 00000000 50000000 
                        AHBSA   EQU              0x50000000
-    2 00000000 40000000 
+    3 00000000 40000000 
                        APBSA   EQU              0x40000000
-    3 00000000         
-    4 00000000 50007080 
+    4 00000000         
+    5 00000000 50007080 
                        NVMCTRL EQU              AHBSA + 0x7080
-    5 00000000 50007000 
+    6 00000000 50007000 
                        EMMU    EQU              AHBSA + 0x7000
-    6 00000000         
-    7 00000000 40000800 
+    7 00000000         
+    8 00000000 40000800 
                        TIMER   EQU              APBSA + 0x0800
-    8 00000000 E000E100 
+    9 00000000 E000E100 
                        NVIC_ISER
                                EQU              0xE000E100
-    9 00000000                 END
+   10 00000000                 END
 Command Line: --debug --xref --cpu=SC000 --bi --apcs=interwork --depend=.\hed98
 428.d -o.\hed98428.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include --prede
 fine="__EVAL SETA 1" --list=.\hed98428.lst INC\Hed98428.s
@@ -33,24 +35,24 @@ AHBSA 50000000
 
 Symbol: AHBSA
    Definitions
-      At line 1 in file INC\Hed98428.s
+      At line 2 in file INC\Hed98428.s
    Uses
-      At line 4 in file INC\Hed98428.s
       At line 5 in file INC\Hed98428.s
+      At line 6 in file INC\Hed98428.s
 
 APBSA 40000000
 
 Symbol: APBSA
    Definitions
-      At line 2 in file INC\Hed98428.s
+      At line 3 in file INC\Hed98428.s
    Uses
-      At line 7 in file INC\Hed98428.s
+      At line 8 in file INC\Hed98428.s
 Comment: APBSA used once
 EMMU 50007000
 
 Symbol: EMMU
    Definitions
-      At line 5 in file INC\Hed98428.s
+      At line 6 in file INC\Hed98428.s
    Uses
       None
 Comment: EMMU unused
@@ -58,7 +60,7 @@ NVIC_ISER E000E100
 
 Symbol: NVIC_ISER
    Definitions
-      At line 8 in file INC\Hed98428.s
+      At line 9 in file INC\Hed98428.s
    Uses
       None
 Comment: NVIC_ISER unused
@@ -66,17 +68,25 @@ NVMCTRL 50007080
 
 Symbol: NVMCTRL
    Definitions
-      At line 4 in file INC\Hed98428.s
+      At line 5 in file INC\Hed98428.s
    Uses
       None
 Comment: NVMCTRL unused
+SFCR E000EF90
+
+Symbol: SFCR
+   Definitions
+      At line 1 in file INC\Hed98428.s
+   Uses
+      None
+Comment: SFCR unused
 TIMER 40000800
 
 Symbol: TIMER
    Definitions
-      At line 7 in file INC\Hed98428.s
+      At line 8 in file INC\Hed98428.s
    Uses
       None
 Comment: TIMER unused
-6 symbols
-337 symbols in table
+7 symbols
+338 symbols in table

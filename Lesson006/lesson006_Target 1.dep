@@ -1,4 +1,4 @@
 Dependencies for Project 'lesson006', Target 'Target 1': (DO NOT MODIFY !)
-F (.\main.s)(0x6357C702)(--cpu SC000 --bi --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include--list .\main.lst --xref -o .\main.o --depend .\main.d)
-I (INC\Hed98428.s)(0x6357C6F8)
-F (.\INC\Hed98428.s)(0x6357C6F8)(--cpu SC000 --bi --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include--list .\hed98428.lst --xref -o .\hed98428.o --depend .\hed98428.d)
+F (.\main.s)(0x635BD182)(--cpu SC000 --bi --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include--list .\main.lst --xref -o .\main.o --depend .\main.d)
+I (INC\Hed98428.s)(0x635BD05C)
+F (.\INC\Hed98428.s)(0x635BD05C)(--cpu SC000 --bi --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include--list .\hed98428.lst --xref -o .\hed98428.o --depend .\hed98428.d)

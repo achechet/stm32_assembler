@@ -1,0 +1,11 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+                       
+Command Line: --debug --xref --cpu=SC000 --bi --apcs=interwork --depend=.\hed98
+429.d -o.\hed98429.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include --prede
+fine="__EVAL SETA 1" --list=.\hed98429.lst INC\Hed98429.s
+331 symbols in table

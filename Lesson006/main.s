@@ -17,7 +17,8 @@ Start PROC
 	MOVS R0, #0
 	MOVS R1, #1
 	ADDS R1, R1, #1
-	LDR  R2, =TIMER
+	LDR  R2, =SFCR
+	LDR  R3,[R2]
 	MOVS R2, #3
 
 	ENDP

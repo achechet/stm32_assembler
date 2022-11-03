@@ -1,0 +1,45 @@
+   GET INC/Hed98428.s
+Stack_Size    EQU 0x400
+top_of_stack  EQU 0x20000000 + Stack_Size
+	
+	PRESERVE8
+	THUMB
+	
+	AREA RESET, DATA, READONLY
+	DCD  top_of_stack
+	DCD  Start
+		
+	AREA |.text|, CODE, READONLY
+		
+	ENTRY
+	
+Start PROC
+	LDR  R1, =SYSCLKCFG
+	LDR  R0,[R1]
+	MOVS R3, #1
+	MOVS R3, R3, LSL 12
+	ADD  R0, R0, R3
+	STR  R0, [R1]
+	
+	MOVS R3, #4
+	MOVS R3, R3, LSL 4
+	ADD  R0, R0, R3
+	STR  R0, [R1]
+	
+	LDR  R1, =SYSCLKEN
+	MOVS R3, #1
+	MOVS R3, R3, LSL 9
+	STR  R3,[R1]
+	
+	LDR  R2, =TIMER0LOAD
+	LDR  R3,[R2]
+	MOVS R0, #7
+	STR  R0,[R2]
+	MOVS R0, #1
+	MOVS R0, #0
+
+	ENDP
+		
+	ALIGN
+	END
+		
